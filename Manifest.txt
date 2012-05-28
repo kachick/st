@@ -4,4 +4,13 @@ History.rdoc
 Manifest.txt
 Rakefile
 lib/tt.rb
+lib/tt/version.rb
+lib/tt/singletonclass.rb
+lib/tt/reports.rb
+lib/tt/objectextension.rb
+lib/tt/exceptionextension.rb
+lib/tt/ext.rb
+lib/tt/main.rb
+test/test_helper.rb
+test/test_tt.rb
 example.rb

@@ -9,7 +9,7 @@ A Tiny Testing framework.
 
 == Futures
 
-* Symple syntax & Tiny keybord typings
+* Symple syntax & Tiny keyboard typings
 
 == Usage
 
@@ -17,68 +17,68 @@ A Tiny Testing framework.
     require 'my_codes'  # Write here tha path, your lib or codes
     require 'tt'        # at Last of requires
 
-* Overview
+* Overviwe
 
-TT 'Successful case' do
+    TT 'Successful case' do
 
-  s = 'Sample Strings'
+      s = 'Sample Strings'
 
-  s.IS 'Sample Strings'
-  s.NOT 'Critical Value'
-  s.MATCH /\S+ \S+/
-  s.EQUAL s
-  s.EQL 'Sample Strings'
-  s.KIND String
-  s.A String
+      s.IS 'Sample Strings'
+      s.NOT 'Critical Value'
+      s.MATCH /\S+ \S+/
+      s.EQUAL s
+      s.EQL 'Sample Strings'
+      s.KIND String
+      s.A String
 
-  Exception.RESCUE do
-    s.fooooooooooobar!
-  end
+      Exception.RESCUE do
+        s.fooooooooooobar!
+      end
 
-  NoMethodError.CATCH do
-    s.fooooooooooobar!
-  end
+      NoMethodError.CATCH do
+        s.fooooooooooobar!
+      end
 
-end
+    end
 
-# Successful case
-9 tests: Pass: 9 - Fail: 0
-------------------------------------------------------------------------------
+    # # Successful case"
+    # 9 tests: Pass: 9 - Fail: 0
+    # ------------------------------------------------------------------------------
 
-TT 'Failer case' do
+    TT 'Failer case' do
 
-  s = 'Sample Strings'
+      s = 'Sample Strings'
 
-  s.IS ';)'
-  s.NOT 'Sample Strings'
-  s.MATCH /\d/
-  s.EQUAL 'Sample Strings'
-  s.EQL :'Sample Strings'
-  s.KIND Symbol
-  s.A Symbol
+      s.IS ';)'
+      s.NOT 'Sample Strings'
+      s.MATCH /\d/
+      s.EQUAL 'Sample Strings'
+      s.EQL :'Sample Strings'
+      s.KIND Symbol
+      s.A Symbol
 
-  Exception.CATCH do
-    s.fooooooooooobar!
-  end
+      Exception.CATCH do
+        s.fooooooooooobar!
+      end
 
-  SyntaxError.RESCUE do
-    s.fooooooooooobar!
-  end
+      SyntaxError.RESCUE do
+        s.fooooooooooobar!
+      end
 
-end
+    end
 
-# Failer case
-Failer: `"Sample Strings"` not IS `";)"`.  # (example.rb:32:in `block in <main>')
-Failer: `"Sample Strings"` not NOT `"Sample Strings"`.  # (example.rb:33:in `block in <main>')
-Failer: `"Sample Strings"` not MATCH `/\d/`.  # (example.rb:34:in `block in <main>')
-Failer: `"Sample Strings"` not EQUAL `"Sample Strings"`.  # (example.rb:35:in `block in <main>')
-Failer: `"Sample Strings"` not EQL `:"Sample Strings"`.  # (example.rb:36:in `block in <main>')
-Failer: `"Sample Strings"` not KIND `Symbol`.  # (example.rb:37:in `block in <main>')
-Failer: `"Sample Strings"` not A `Symbol`.  # (example.rb:38:in `block in <main>')
-Failer: Expected just an error `Exception`, but ocuured `NoMethodError`.  # (example.rb:40:in `block in <main>')
-Failer: Expected an error `SyntaxError` or any suberror, but ocuured `NoMethodError`.  # (example.rb:44:in `block in <main>')
-9 tests: Pass: 0 - Fail: 9
-------------------------------------------------------------------------------
+    # # Failer case
+    # Failer: `"Sample Strings"` not IS `";)"`.  # (example.rb:32:in `block in <main>')
+    # Failer: `"Sample Strings"` not NOT `"Sample Strings"`.  # (example.rb:33:in `block in <main>')
+    # Failer: `"Sample Strings"` not MATCH `/\d/`.  # (example.rb:34:in `block in <main>')
+    # Failer: `"Sample Strings"` not EQUAL `"Sample Strings"`.  # (example.rb:35:in `block in <main>')
+    # Failer: `"Sample Strings"` not EQL `:"Sample Strings"`.  # (example.rb:36:in `block in <main>')
+    # Failer: `"Sample Strings"` not KIND `Symbol`.  # (example.rb:37:in `block in <main>')
+    # Failer: `"Sample Strings"` not A `Symbol`.  # (example.rb:38:in `block in <main>')
+    # Failer: Expected just an error `Exception`, but ocuured `NoMethodError`.  # (example.rb:40:in `block in <main>')
+    # Failer: Expected an error `SyntaxError` or any suberror, but ocuured `NoMethodError`.  # (example.rb:44:in `block in <main>')
+    # 9 tests: Pass: 0 - Fail: 9
+    # ------------------------------------------------------------------------------
  
 
 == Requirements
