@@ -1,2 +1,2 @@
 require 'test/unit'
-require_relative '../lib/tt'
+require_relative '../lib/st'

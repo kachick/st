@@ -1,7 +1,7 @@
 $VERBOSE = true
 require_relative 'test_helper'
 
-class TestTT < Test::Unit::TestCase
+class TestST < Test::Unit::TestCase
 
   def test_assertions_succeed
     it = 'Sample String'

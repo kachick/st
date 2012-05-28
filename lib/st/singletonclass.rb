@@ -1,7 +1,7 @@
 # Copyright (C) 2012 Kenichi Kamiya
 
 
-module TT
+module ST
 
   @failers, @pass_counter = [], 0
 

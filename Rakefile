@@ -4,7 +4,7 @@ require 'fileutils'
 
 Hoe.plugin :newgem
 
-$hoe = Hoe.spec 'tt' do
+$hoe = Hoe.spec 'st' do
   developer 'Kenichi Kamiya', 'kachick1+ruby@gmail.com'
   self.rubyforge_name       = name
   require_ruby_version '>= 1.9.2'

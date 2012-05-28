@@ -1,7 +1,7 @@
 # Copyright (C) 2012 Kenichi Kamiya
 
 
-module TT
+module ST
 
   module ObjectExtension
   
@@ -55,7 +55,7 @@ module TT
 
     instance_methods(false).grep(/\A(?<mname>[A-Z]+)\?\z/) do |predicate|
       define_method $~[:mname].to_sym do |other|
-        (__send__ predicate, other) ? TT.pass : TT.fail(TestFailed.new self, other, __callee__, caller.first)
+        (__send__ predicate, other) ? ST.pass : ST.fail(TestFailed.new self, other, __callee__, caller.first)
       end
     end
     

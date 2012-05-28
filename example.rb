@@ -1,9 +1,9 @@
 $VERBOSE = true
 
-require_relative 'lib/tt'
+require_relative 'lib/st'
 
 
-TT 'Successful case' do
+ST 'Successful case' do
 
   s = 'Sample Strings'
 
@@ -25,7 +25,7 @@ TT 'Successful case' do
 
 end
 
-TT 'Failer case' do
+ST 'Failer case' do
 
   s = 'Sample Strings'
 

@@ -1,6 +1,6 @@
 # Copyright (C) 2012 Kenichi Kamiya
 
-module TT
+module ST
 
   TestFailed = Struct.new :target, :expected, :comparison, :caller do
     def to_s

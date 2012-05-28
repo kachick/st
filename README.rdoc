@@ -1,11 +1,11 @@
-= tt
+= st
 
-code :: http://github.com/kachick/tt
-gem  :: http://rubygems.org/gems/tt
+code :: hstp://github.com/kachick/st
+gem  :: hstp://rubygems.org/gems/st
 
 == Description
 
-A Tiny Testing framework.
+A Simplified Testing Framework.
 
 == Futures
 
@@ -15,11 +15,11 @@ A Tiny Testing framework.
 
 * Setup
     require 'my_codes'  # Write here tha path, your lib or codes
-    require 'tt'        # at Last of requires
+    require 'st'        # at Last of requires
 
 * Overviwe
 
-    TT 'Successful case' do
+    ST 'Successful case' do
 
       s = 'Sample Strings'
 
@@ -45,7 +45,7 @@ A Tiny Testing framework.
     # 9 tests: Pass: 9 - Fail: 0
     # ------------------------------------------------------------------------------
 
-    TT 'Failer case' do
+    ST 'Failer case' do
 
       s = 'Sample Strings'
 
@@ -92,7 +92,7 @@ A Tiny Testing framework.
 
 == Installation
 
-* gem install tt
+* gem install st
 
 == License
 

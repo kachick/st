@@ -1,7 +1,7 @@
 # Copyright (C) 2012 Kenichi Kamiya
 
 
-module TT
+module ST
 
   module ExceptionExtension
 
@@ -9,11 +9,11 @@ module TT
     def RESCUE(&block)
       block.call
     rescue self
-      TT.pass
+      ST.pass
     rescue Exception
-      TT.fail RescueFailedMissMatch.new($!, self, caller[1])
+      ST.fail RescueFailedMissMatch.new($!, self, caller[1])
     else
-      TT.fail RescueFailedNoError.new(self, caller[1])
+      ST.fail RescueFailedNoError.new(self, caller[1])
     end
     
     # pass if occured the error is just a own instance
@@ -21,12 +21,12 @@ module TT
       block.call
     rescue Exception
       if $!.instance_of? self
-        TT.pass
+        ST.pass
       else
-        TT.fail CatchFailedMissMatch.new($!, self, caller[1])
+        ST.fail CatchFailedMissMatch.new($!, self, caller[1])
       end
     else
-      TT.fail CatchFailedNoError.new(self, caller[1])
+      ST.fail CatchFailedNoError.new(self, caller[1])
     end
 
   end

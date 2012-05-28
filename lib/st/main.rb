@@ -1,14 +1,14 @@
 # Copyright (C) 2012 Kenichi Kamiya
 
-def TT(title=nil)
+def ST(title=nil)
   puts "# #{title || caller.first}"
       
-  TT.setup
+  ST.setup
   yield
 rescue Exception
   $stderr.puts 'Unkonw error occured', $!
 else
-  TT.report
+  ST.report
 ensure
-  TT.teardown
+  ST.teardown
 end
