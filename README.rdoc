@@ -1,7 +1,7 @@
 = st
 
-code :: hstp://github.com/kachick/st
-gem  :: hstp://rubygems.org/gems/st
+code :: http://github.com/kachick/st
+gem  :: http://rubygems.org/gems/st
 
 == Description
 
