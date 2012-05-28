@@ -17,7 +17,7 @@ A Simplified Testing Framework.
     require 'my_codes'  # Write here tha path, your lib or codes
     require 'st'        # at Last of requires
 
-* Overviwe
+* Overview
 
     ST 'Successful case' do
 

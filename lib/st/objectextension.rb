@@ -7,22 +7,22 @@ module ST
   
     # true if bidirectical passed #equal, and __id__ is same value
     def EQUAL?(other)
-      (__id__ == other.__id__) && (_tt_bidirectical? :equal?, other)
+      (__id__ == other.__id__) && (_st_bidirectical? :equal?, other)
     end
 
     # true if completed condition for hash key
     def EQL?(other)
-      (_tt_bidirectical? :eql?, other) && (hash == other.hash) &&
+      (_st_bidirectical? :eql?, other) && (hash == other.hash) &&
         ( {self => true}.has_key? other)
     end
 
     # true if under "=="
     def IS?(other)
-      _tt_bidirectical? :==, other
+      _st_bidirectical? :==, other
     end
     
     def NOT?(other)
-      (_tt_bidirectical? :!=, other) && (!(self == other)) && (!(other == self))
+      (_st_bidirectical? :!=, other) && (!(self == other)) && (!(other == self))
     end
     
     def MATCH?(other)
@@ -61,7 +61,7 @@ module ST
     
     private
 
-    def _tt_bidirectical?(comparison, other)
+    def _st_bidirectical?(comparison, other)
       (__send__ comparison, other) && (other.__send__ comparison, self)
     end
 
