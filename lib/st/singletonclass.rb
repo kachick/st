@@ -25,7 +25,7 @@ module ST
 
     def report
       @failers.each do |result|
-        puts "Failer: #{result}"
+        puts "Failure: #{result}"
       end
 
       puts "#{@pass_counter + @failers.length} tests: Pass: #{@pass_counter} - Fail: #{@failers.length}"

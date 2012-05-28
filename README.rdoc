@@ -45,7 +45,7 @@ A Simplified Testing Framework.
     # 9 tests: Pass: 9 - Fail: 0
     # ------------------------------------------------------------------------------
 
-    ST 'Failer case' do
+    ST 'Failure case' do
 
       s = 'Sample Strings'
 
@@ -67,16 +67,16 @@ A Simplified Testing Framework.
 
     end
 
-    # # Failer case
-    # Failer: `"Sample Strings"` not IS `";)"`.  # (example.rb:32:in `block in <main>')
-    # Failer: `"Sample Strings"` not NOT `"Sample Strings"`.  # (example.rb:33:in `block in <main>')
-    # Failer: `"Sample Strings"` not MATCH `/\d/`.  # (example.rb:34:in `block in <main>')
-    # Failer: `"Sample Strings"` not EQUAL `"Sample Strings"`.  # (example.rb:35:in `block in <main>')
-    # Failer: `"Sample Strings"` not EQL `:"Sample Strings"`.  # (example.rb:36:in `block in <main>')
-    # Failer: `"Sample Strings"` not KIND `Symbol`.  # (example.rb:37:in `block in <main>')
-    # Failer: `"Sample Strings"` not A `Symbol`.  # (example.rb:38:in `block in <main>')
-    # Failer: Expected just an error `Exception`, but ocuured `NoMethodError`.  # (example.rb:40:in `block in <main>')
-    # Failer: Expected an error `SyntaxError` or any suberror, but ocuured `NoMethodError`.  # (example.rb:44:in `block in <main>')
+    # # Failure case
+    # Failure: `"Sample Strings"` not IS `";)"`.  # (example.rb:32:in `block in <main>')
+    # Failure: `"Sample Strings"` not NOT `"Sample Strings"`.  # (example.rb:33:in `block in <main>')
+    # Failure: `"Sample Strings"` not MATCH `/\d/`.  # (example.rb:34:in `block in <main>')
+    # Failure: `"Sample Strings"` not EQUAL `"Sample Strings"`.  # (example.rb:35:in `block in <main>')
+    # Failure: `"Sample Strings"` not EQL `:"Sample Strings"`.  # (example.rb:36:in `block in <main>')
+    # Failure: `"Sample Strings"` not KIND `Symbol`.  # (example.rb:37:in `block in <main>')
+    # Failure: `"Sample Strings"` not A `Symbol`.  # (example.rb:38:in `block in <main>')
+    # Failure: Expected just an error `Exception`, but ocuured `NoMethodError`.  # (example.rb:40:in `block in <main>')
+    # Failure: Expected an error `SyntaxError` or any suberror, but ocuured `NoMethodError`.  # (example.rb:44:in `block in <main>')
     # 9 tests: Pass: 0 - Fail: 9
     # ------------------------------------------------------------------------------
  

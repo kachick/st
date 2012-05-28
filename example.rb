@@ -25,7 +25,7 @@ ST 'Successful case' do
 
 end
 
-ST 'Failer case' do
+ST 'Failure case' do
 
   s = 'Sample Strings'
 
