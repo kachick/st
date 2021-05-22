@@ -1,7 +1,9 @@
 = st
 
-code :: http://github.com/kachick/st
-gem  :: http://rubygems.org/gems/st
+* <em><b>This repository is archived</b></em>
+* <em><b>No longer maintained</b></em>
+
+I didn't publish the gem to https://rubygems.org
 
 == Description
 
@@ -9,7 +11,7 @@ A Simplified Testing Framework.
 
 == Futures
 
-* Symple syntax & Tiny keyboard typings
+* Simple syntax & Tiny keyboard typings
 
 == Usage
 
@@ -75,8 +77,8 @@ A Simplified Testing Framework.
     # Failure: `"Sample Strings"` not EQL `:"Sample Strings"`.  # (example.rb:36:in `block in <main>')
     # Failure: `"Sample Strings"` not KIND `Symbol`.  # (example.rb:37:in `block in <main>')
     # Failure: `"Sample Strings"` not A `Symbol`.  # (example.rb:38:in `block in <main>')
-    # Failure: Expected just an error `Exception`, but ocuured `NoMethodError`.  # (example.rb:40:in `block in <main>')
-    # Failure: Expected an error `SyntaxError` or any suberror, but ocuured `NoMethodError`.  # (example.rb:44:in `block in <main>')
+    # Failure: Expected just an error `Exception`, but ocurred `NoMethodError`.  # (example.rb:40:in `block in <main>')
+    # Failure: Expected an error `SyntaxError` or any suberror, but ocurred `NoMethodError`.  # (example.rb:44:in `block in <main>')
     # 9 tests: Pass: 0 - Fail: 9
     # ------------------------------------------------------------------------------
  
@@ -89,10 +91,6 @@ A Simplified Testing Framework.
   
   * 1.9.3-p194
   * 1.9.2-p290
-
-== Installation
-
-* gem install st
 
 == License
 

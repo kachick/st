@@ -10,7 +10,7 @@ module ST
 
   RescueFailedMissMatch = Struct.new :occured, :expected, :caller do
     def to_s
-      "Expected an error `#{expected}` or any suberror, but ocuured `#{occured.class}`.  # (#{caller})"
+      "Expected an error `#{expected}` or any suberror, but ocurred `#{occured.class}`.  # (#{caller})"
     end
   end
 
@@ -22,7 +22,7 @@ module ST
 
   CatchFailedMissMatch = Struct.new :occured, :expected, :caller do
     def to_s
-      "Expected just an error `#{expected}`, but ocuured `#{occured.class}`.  # (#{caller})"
+      "Expected just an error `#{expected}`, but ocurred `#{occured.class}`.  # (#{caller})"
     end
   end
 
